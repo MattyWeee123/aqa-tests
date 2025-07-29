@@ -125,15 +125,15 @@
 		<testCaseName>dacapo-lusearch-fix</testCaseName>
 		<command>$(JAVA_COMMAND) $(JVM_OPTIONS) -jar $(Q)$(TEST_RESROOT)$(D)dacapo.jar$(Q) lusearch; \
 		$(TEST_STATUS)</command>
-                <versions>
-			<version>11+</version>
-		</versions>
 		<levels>
 			<level>sanity</level>
 		</levels>
 		<groups>
 			<group>perf</group>
 		</groups>
+                <versions>
+			<version>11+</version>
+		</versions>
 	</test>
 	<test>
 		<testCaseName>dacapo-pmd</testCaseName>
