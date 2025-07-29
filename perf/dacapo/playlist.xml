@@ -123,14 +123,11 @@
 	</test>
 	<test>
 		<testCaseName>dacapo-lusearch-fix</testCaseName>
-                <disables> 
-                        <disable>
-                                <comment>https://github.com/adoptium/aqa-tests/issues/6306</comment>
-                                <version>10-</version>
-                        </disable>
-                </disables>
 		<command>$(JAVA_COMMAND) $(JVM_OPTIONS) -jar $(Q)$(TEST_RESROOT)$(D)dacapo.jar$(Q) lusearch; \
 		$(TEST_STATUS)</command>
+                <versions>
+			<version>11+</version>
+		</versions>
 		<levels>
 			<level>sanity</level>
 		</levels>
